@@ -1,0 +1,8 @@
+/* cmp - about */
+
+.about{
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    margin: 40px 10px;
+}
