@@ -1,2 +1,8 @@
 /* main */
-@import "/assets/style/reset.css"
+@import "/assets/style/reset.css";
+
+/* vars */
+@import "/assets/style/vars.css";
+
+/* cmps */
+@import "/assets/style/cmps/hero.css";
