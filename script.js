@@ -13,9 +13,16 @@ function toggleService(card) {
 }
 
 // Carousel
-function scrollCarousel(dir) {
-    const track = document.getElementById('carousel')
-    track.scrollBy({ left: dir * -280, behavior: 'smooth' })
+// Results carousel
+function scrollResults(dir) {
+    const track = document.getElementById('resultsTrack')
+    track.scrollBy({ left: dir * -300, behavior: 'smooth' })
+}
+
+// More info carousel
+function scrollMore(dir) {
+    const track = document.getElementById('moreTrack')
+    track.scrollBy({ left: dir * -220, behavior: 'smooth' })
 }
 
 // Form submit
