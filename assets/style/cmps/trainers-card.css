@@ -1,1 +1,11 @@
 /* trainers card cmp */
+
+.trainers{
+    padding: 80px 24px;
+
+    .section-title{
+        font-size: 26px;
+    }
+
+    
+}
