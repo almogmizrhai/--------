@@ -28,7 +28,7 @@
 
         /* ── כרטיס הטלפון ── */
         .wa-chat {
-            background: var(--black);
+            background: var(--beige);
             border-radius: 20px;
             overflow: hidden;
             text-align: right;
@@ -37,7 +37,7 @@
         
         /* ── Header ── */
         .wa-header {
-            background: var(--black);
+            background: var(--beige);
             display: flex;
             align-items: center;
             gap: 12px;
@@ -69,7 +69,7 @@
         .wa-name {
             font-size: 14px;
             font-weight: 700;
-            color: var(--white);
+            color: var(--black);
         }
         
         .wa-tag {
