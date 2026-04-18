@@ -57,3 +57,56 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); })
     }, { threshold: 0.12 })
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el))
+
+// Jordan Pro Leads
+const MY_WHATSAPP = '972503777486'  
+const SHEET_URL   = 'https://script.google.com/macros/s/AKfycbzGS1F85y8ycVpMrxEXH4QnXSaPQHHO2w0b5wbnlNMbcaHDF5c8eTN4v_S152ltfoZX/exec' 
+
+async function submitForm(formId, successId) {
+    const form = document.getElementById(formId)
+
+    // שלוף ערכים
+    const name   = form.querySelector('input[type="text"]').value.trim()
+    const phone  = form.querySelector('input[type="tel"]').value.trim()
+    const age    = form.querySelector('input[type="number"]').value.trim()
+    const gender = form.querySelector('select').value
+
+    // וידוא שדות חובה
+    if (!name || !phone) {
+        alert('אנא מלא/י שם וטלפון')
+        return
+    }
+
+    // ── שמור ב-Google Sheets ──
+    try {
+        await fetch(SHEET_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, phone, age, gender }),
+            mode: 'no-cors'
+        })
+        console.log('✓ נשמר ב-Google Sheets')
+    } catch(err) {
+        console.warn('שגיאה בשמירה:', err)
+    }
+
+    // ── פתח WhatsApp ──
+    const msg = [
+        `🏋️  מתאמן\ת חדש\ה– Jordan PRO`,
+        `👤 שם: ${name}`,
+        `📱 טלפון: ${phone}`,
+        age    ? `🎂 גיל: ${age}`    : '',
+        gender ? `⚧ מין: ${gender}` : '',
+        `📅 ${new Date().toLocaleString('he-IL')}`,
+    ].filter(Boolean).join('\n')
+
+    window.open(`https://wa.me/${MY_WHATSAPP}?text=${encodeURIComponent(msg)}`, '_blank')
+
+    // ── הצג הצלחה ──
+    const successEl = document.getElementById(successId)
+    if (successEl) successEl.classList.add('show')
+
+    // ── נקה טופס ──
+    form.querySelectorAll('input').forEach(i => i.value = '')
+    form.querySelector('select').selectedIndex = 0
+}
