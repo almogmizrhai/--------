@@ -34,6 +34,7 @@
 
     .more-card {
         min-width: 200px;
+        max-width: 200px;
         background: var(--black);
         border-radius: 16px;
         overflow: hidden;
@@ -63,6 +64,9 @@
             font-weight: 700;
             color: var(--white);
             text-align: right;
+            white-space: normal; 
+            word-break: break-word;
+            line-height: 1.4;
         }
     }
 
