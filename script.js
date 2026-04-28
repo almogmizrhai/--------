@@ -60,7 +60,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Jordan Pro Leads
 const MY_WHATSAPP = '972503777486'  
-const SHEET_URL   = 'https://script.google.com/macros/s/AKfycbzb7_LJEfzrhjRRob_9MeFcnws6OycEmnjZ3d_S88rYAoAS8hlBPLaeeXpH828usH_J/exec' 
+const SHEET_URL   = 'https://script.google.com/macros/s/AKfycbzySHOG4JL6YrdJTuIVRVWGsTIm2WnNAM-0vTGGvSDKX4cDJsh3XizaU7D8KSaA_QEa/exec'
 
 async function submitForm(formId, successId) {
     const form = document.getElementById(formId)
@@ -72,14 +72,37 @@ async function submitForm(formId, successId) {
     const gender = form.querySelector('select').value
     const email  = form.querySelector('input[type="email"]').value.trim()
 
-    // שדות טקסט לפי סדר — מטרה ואיך הגיע
     const textInputs = form.querySelectorAll('input[type="text"]')
-    const goal   = textInputs[1]?.value.trim() || ''  // שדה טקסט שני
-    const source = textInputs[2]?.value.trim() || ''  // שדה טקסט שלישי
+    const goal   = textInputs[1]?.value.trim() || ''
+    const source = textInputs[2]?.value.trim() || ''
 
-    // וידוא שדות חובה
-    if (!name || !phone) {
-        alert('אנא מלא/י את כל הפרטים')
+    // ✅ וידוא כל השדות החובה
+    if (!name) {
+        alert('אנא מלא/י שם מלא')
+        return
+    }
+    if (!phone) {
+        alert('אנא מלא/י מספר טלפון')
+        return
+    }
+    if (!age) {
+        alert('אנא מלא/י גיל')
+        return
+    }
+    if (!gender) {
+        alert('אנא בחר/י מין')
+        return
+    }
+    if (!email) {
+        alert('אנא מלא/י מייל')
+        return
+    }
+    if (!goal) {
+        alert('אנא מלא/י מה המטרה שלך')
+        return
+    }
+    if (!source) {
+        alert('אנא מלא/י איך הגעת אלינו')
         return
     }
 
@@ -98,16 +121,16 @@ async function submitForm(formId, successId) {
 
     // ── פתח WhatsApp ──
     const msg = [
-        `🏋️Jordan PRO`,
+        `🏋️ Jordan PRO`,
         `👤 שם: ${name}`,
         `📱 טלפון: ${phone}`,
-        age    ? `🎂 גיל: ${age}`         : '',
-        gender ? `⚧ מין: ${gender}`       : '',
-        email  ? `📧 מייל: ${email}`       : '',
-        goal   ? `🎯 מטרה: ${goal}`        : '',
-        source ? `📣 הגיע דרך: ${source}`  : '',
+        `🎂 גיל: ${age}`,
+        `⚧ מין: ${gender}`,
+        `📧 מייל: ${email}`,
+        `🎯 מטרה: ${goal}`,
+        `📣 הגיע דרך: ${source}`,
         `📅 ${new Date().toLocaleString('he-IL')}`,
-    ].filter(Boolean).join('\n')
+    ].join('\n')
 
     window.open(`https://wa.me/${MY_WHATSAPP}?text=${encodeURIComponent(msg)}`, '_blank')
 
