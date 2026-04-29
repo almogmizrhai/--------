@@ -18,7 +18,14 @@
         display: grid;
         gap: 10px;
         justify-items: center;
-        margin: 40px 0px;
+
+
+        .big-h1{
+            font-size: large;
+            text-align: center;
+            font-weight: bold;
+        }
+        
 
         p{
             text-align: center;

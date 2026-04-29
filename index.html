@@ -1,333 +1,373 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="he" dir="rtl">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jordan PRO | מתחם כושר</title>
-  <link rel="stylesheet" href="main.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet"/>
-</head>
-<body>
-
-  <!-- 1. HERO -->
-  <section class="hero fade-in">
-    <div class="hero-logo">
-      <img src="assets\imegs\logo.jpg"/>
-    </div>
-    
-    <div class="hero-content">
-      <!-- <h1>Jordan <span>Pro</span></h1> -->
-      <p>מתחם אימוני כושר במעלה אדומים המציע אימונים אישיים וקבוצתיים, תוכניות תזונה וליווי מקצועי עד להשגת כל המטרות.</p> 
-      <a href="#contact1" class="btn-primary">התחל/י את המסע שלך</a>
-    </div>
-  </section>
-  
-  <!-- 2. ABOUT -->
-  <section class="about fade-in">
-    <h2>קצת עלינו | Jordan <span>Pro</span></h2>
-    <img src="assets\imegs\logo.jpg"/>
-    <p>החזון שלנו הוא להעניק לכל אדם את הכלים, הידע והביטחון להגיע לגרסה הטובה ביותר של עצמו – פיזית ומנטלית. אנחנו רואים באימונים הרבה מעבר לפעילות גופנית, אלא דרך חיים שמביאה לתוצאות אמיתיות ויציבות. 
-    <br>
-    <br>
-    ב-Jordan Pro אנו שמים דגש על בניית תהליך מותאם אישית לכל מתאמן, תוך יצירת סביבת אימון מקצועית, תומכת ומלאת מוטיבציה, שמובילה להצלחה לאורך זמן.</p>
-  </section>
-
-  <!-- 3. SERVICES -->
-  <section class="services fade-in">
-    <h2 class="section-title" >שירותי המתחם</h2>
-    <div class="service-grid">
-
-      <!-- אימוניים קבוצתיים -->
-      <div class="service-card " onclick="toggleService(this)">
-        <div class="service-card-header">
-          <!-- <div class="service-icon">👥</div> -->
-          <img class="service-icon-img" src="assets\imegs\icon-group.png" alt="group" />
-          <span class="service-name">אימונים קבוצתיים</span>
-          <span class="service-arrow">▼</span>
-        </div>
-        <div class="service-body">
-          <div class="service-subtitle">אימונים בקבוצות באווירה מנצחת</div>
-          <p class="service-desc">אימונים בקבוצות ב-Jordan Pro נועדו לשלב בין מקצועיות, אנרגיה קבוצתית ומוטיבציה גבוהה. האימונים מתבצעים בקבוצות קטנות על מנת לאפשר יחס אישי, תיקון טכניקה ושמירה על בטיחות מלאה לכל מתאמן ומתאמנת. השילוב בין דינמיקה קבוצתית לבין ליווי מקצועי צמוד מאפשר לכל אחד להתקדם בקצב שלו – אך מבלי לוותר על האתגר.
-            <br>
-          כל אימון בנוי בצורה חכמה הכוללת חימום, עבודה פונקציונלית, חיזוק שרירים, שיפור סיבולת לב-ריאה ושחרור נכון בסיום. התוכנית מותאמת לרמות שונות כך שגם מתחילים וגם מתקדמים יכולים להשתלב ולהרגיש שייכים.</p>
-          <br>
-          <div class="service-subtitle">למי זה מתאים?</div>
-          <p class="service-desc"> האימונים מתאימים למי שמחפש מסגרת מחייבת, אווירה תומכת ותוצאות מוכחות. אם חשוב לכם ליהנות מהדרך, להתחזק, להתחטב ולשפר כושר גופני בסביבה מקצועית ומעצימה – אימונים בקבוצות הם הבחירה הנכונה עבורכם.</p>
-          <!-- <div class="service-includes">כל אימון כולל:</div>
-          <ul class="service-check-list">
-            <li>חימום</li>
-            <li>עבודה פונקציונלית</li>
-            <li>חיזוק שרירים</li>
-            <li>שיפור סיבולת לב-ריאה</li>
-            <li>שחרור בסיום</li>
-          </ul> -->
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jordan PRO | מתחם כושר</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;800;900&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 1. HERO -->
+    <section class="hero fade-in">
+      <div class="hero-logo">
+        <img src="assets\imegs\logo.jpg" />
       </div>
-      
-      <!-- אימונים אישיים -->
-      <div class="service-card " onclick="toggleService(this)">
-        <div class="service-card-header">
-          <!-- <div class="service-icon">🏋️</div> -->
-          <img class="service-icon-img" src="assets/imegs/icon-personal.png" alt="icon-personal" />
-          <span class="service-name">אימונים אישיים</span>
-          <span class="service-arrow">▼</span>
+
+      <div class="hero-content">
+        <!-- <h1>Jordan <span>Pro</span></h1> -->
+        <p class="big-h1">מתחם אימוני כושר במעלה אדומים</p>
+        <p>
+          המציע אימונים אישיים וקבוצתיים, תוכניות תזונה וליווי מקצועי עד להשגת
+          כל המטרות
+        </p>
+
+        <a href="#contact1" class="btn-primary">התחל/י את המסע שלך</a>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT -->
+    <section class="about fade-in">
+      <h2>קצת עלינו | Jordan <span>Pro</span></h2>
+      <img src="assets\imegs\logo.jpg" />
+      <p>
+        ליצור מרחב אימון עוצמתי ומדויק, כזה שמאפשר לכל אדם להתחבר לעצמו, לבנות
+        שגרה יציבה, ולהרגיש חלק מקהילה שהיא בית. המטרה שלנו היא להוביל לשיפור
+        איכות החיים, בלי לחץ, בלי קיצורים, ועם עוצמה שקטה שמתחילה מבפנים.
+        <br />
+        <br />
+        ב־JordanPro אנחנו מאמינים בשיטה שמשלבת אימונים מקצועיים, ליווי אישי,
+        ומתן כלים אמיתיים לשיפור הבריאות גם מחוץ לשעות האימון. אנחנו מתחייבים
+        לשירות, מקצועיות ויחס אישי, כדי שכל אחד ואחת יוכלו לקבל את הפתרון המדויק
+        עבורם, בדרך המתאימה ביותר בשבילם .
+      </p>
+    </section>
+
+    <!-- 3. SERVICES -->
+    <section class="services fade-in">
+      <h2 class="section-title">שירותי המתחם</h2>
+      <div class="service-grid">
+        <!-- אימוניים קבוצתיים -->
+        <div class="service-card" onclick="toggleService(this)">
+          <div class="service-card-header">
+            <!-- <div class="service-icon">👥</div> -->
+            <img
+              class="service-icon-img"
+              src="assets\imegs\icon-group.png"
+              alt="group"
+            />
+            <span class="service-name">אימונים קבוצתיים</span>
+            <span class="service-arrow">▼</span>
+          </div>
+          <div class="service-body">
+            <div class="service-subtitle">אימונים בקבוצות באווירה מנצחת</div>
+            <p class="service-desc">
+              האימונים בקבוצות ב-JordanPro נועדו לשלב בין מקצועיות, אנרגיה
+              קבוצתית ומוטיבציה גבוהה. האימונים מתבצעים בקבוצות קטנות על מנת
+              לאפשר יחס אישי, שיפור טכניקה ושמירה על בטיחות מלאה לכל מתאמן
+              ומתאמנת. השילוב בין דינמיקה קבוצתית לבין ליווי מקצועי צמוד מאפשר
+              לכל אחד להתקדם בקצב שלו מבלי לוותר על האתגר.
+              <br />
+              כל אימון הוא מגוון ומותאם לקבוצה שנמצאת באימון בזמן נתון. לנו יש
+              את היכולת להתאים את הרמה את האימון לכל אחד ואחת באופן אישי.
+            </p>
+            <br />
+            <div class="service-subtitle">למי זה מתאים?</div>
+            <p class="service-desc">
+              האימונים מתאימים למי שמחפש מסגרת מחייבת, אווירה תומכת ותוצאות
+              מוכחות. אם חשוב לכם ליהנות מהדרך, להתחזק, להתחטב ולשפר כושר גופני
+              בסביבה מקצועית ומעצימה, האימונים בקבוצות אצלנו הם הבחירה הנכונה
+              עבורכם.
+            </p>
+          </div>
         </div>
-        <div class="service-body">
-          <div class="service-subtitle">תוכנית אימון מותאמת אישית</div>
-          <p class="service-desc">אימונים אישיים ב-Jordan Pro מיועדים למי שמעוניין בליווי צמוד ומדויק בהתאם למטרות האישיות שלו. כל תהליך מתחיל באבחון מקיף הכולל בדיקת מצב גופני, הבנת מטרות ויעדים, בניית תוכנית עבודה מותאמת אישית והגדרת שלבי התקדמות ברורים.
-            <br>
-            באימונים האישיים ניתן דגש מלא על טכניקה נכונה, מניעת פציעות, שיפור ביצועים והתקדמות מדידה. המאמן נמצא לצדכם לאורך כל האימון, דואג לאתגר אתכם, לשמור על רמת מוטיבציה גבוהה ולהוביל אתכם לשיפור מתמיד.</p>
-            <br>
+
+        <!-- אימונים אישיים -->
+        <div class="service-card" onclick="toggleService(this)">
+          <div class="service-card-header">
+            <!-- <div class="service-icon">🏋️</div> -->
+            <img
+              class="service-icon-img"
+              src="assets/imegs/icon-personal.png"
+              alt="icon-personal"
+            />
+            <span class="service-name">אימונים אישיים</span>
+            <span class="service-arrow">▼</span>
+          </div>
+          <div class="service-body">
+            <div class="service-subtitle">תוכנית אימון מותאמת אישית</div>
+            <p class="service-desc">
+              אימונים אישיים ב-Jordan Pro מיועדים למי שמעוניין בליווי צמוד
+              ומדויק בהתאם למטרות האישיות שלו. כל תהליך מתחיל בפגישת ייעוץ,
+              אבחון מקיף הכולל בדיקת מצב גופני, הבנת מטרות ויעדים, בניית תוכנית
+              עבודה מותאמת אישית.
+              <br />
+              באימונים האישיים ניתן דגש מלא על טכניקה נכונה, מניעת פציעות, שיפור
+              ביצועים והתקדמות פרוגרסיבית. המאמן נמצא לצדכם לאורך כל האימון,
+              דואג להביא אתכם למקסימום יכולת, לשמור על רמת מוטיבציה גבוהה
+              ולהוביל אתכם לשיפור רציף והדרגתי.
+            </p>
+            <br />
             <div class="service-subtitle">תוצאות מדויקות ובטוחות</div>
-            <p class="service-desc">האימונים מתאימים לירידה במשקל, חיטוב, העלאת מסת שריר, שיקום לאחר פציעה ושיפור כושר כללי. זהו תהליך ממוקד שמאפשר להשיג תוצאות מהירות ואיכותיות תוך שמירה על בריאות הגוף והתקדמות נכונה לאורך זמן.</p>
-          
-          <!-- <div class="service-includes">התהליך כולל:</div>
-          <ul class="service-check-list">
-            <li>אבחון מצב גופני</li>
-            <li>בניית תוכנית אימון אישית</li>
-            <li>הגדרת יעדים</li>
-            <li>מעקב התקדמות</li>
-          </ul>
-          <div class="service-includes" style="margin-top:16px">האימונים מתאימים ל:</div>
-          <ul class="service-check-list">
-            <li>ירידה במשקל</li>
-            <li>חיטוב</li>
-            <li>עלייה במסת שריר</li>
-            <li>שיקום לאחר פציעה</li>
-            <li>שיפור כושר כללי</li>
-          </ul> -->
+            <p class="service-desc">
+              האימונים מתאימים לירידה במשקל, חיטוב, העלאת מסת שריר, שיקום לאחר
+              פציעה, שיפור הטכניקה, העלאת הביטחון העצמי ושיפור כושר כללי. זהו
+              תהליך ממוקד שמאפשר להשיג תוצאות איכותיות תוך שמירה על בריאות הגוף
+              והתקדמות נכונה לאורך זמן.
+            </p>
+          </div>
         </div>
-      </div>
-      
-      <!-- תוכניות תזונה -->
-      <div class="service-card" onclick="toggleService(this)">
-        <div class="service-card-header">
-          <!-- <div class="service-icon">🍎</div> -->
-          <img class="service-icon-img" src="assets/imegs/icon-food.png" alt="icon-food" />
-          <span class="service-name">תוכניות תזונה</span>
-          <span class="service-arrow">▼</span>
-        </div>
-        <div class="service-body">
-          <div class="service-subtitle">תזונה כחלק בלתי נפרד מההצלחה</div>
-          <p class="service-desc">תוכנית תזונה נכונה היא הבסיס לכל תהליך שינוי גופני. ב-Jordan Pro אנו בונים תוכניות תזונה מותאמות אישית בהתאם לאורח החיים, למטרות ולצרכים הפיזיולוגיים של כל מתאמן ומתאמנת. המטרה היא ליצור תפריט מאוזן, בריא וישים – כזה שניתן להתמיד בו לאורך זמן.
-          <br>
-          התוכנית מתחשבת בהרגלי אכילה, שעות עבודה, העדפות אישיות ורמת פעילות גופנית. אנו שמים דגש על איזון נכון בין חלבונים, פחמימות ושומנים, תוך שמירה על אנרגיה גבוהה במהלך היום ותמיכה מלאה בתהליך האימונים.</p>
-          <div class="service-subtitle" >ליווי ומעקב לאורך הדרך</div>
-          <p class="service-desc">מעבר לבניית התפריט, אנו מספקים ליווי שוטף, התאמות לפי קצב ההתקדמות ומענה לשאלות שעולות בדרך. כך ניתן להבטיח שהתהליך יהיה אפקטיבי, מאוזן ובריא – ולהוביל לתוצאות אמיתיות שנשמרות לאורך זמן.</p>
-          <!-- <div class="service-includes">התוכנית כוללת:</div>
-          <ul class="service-check-list">
-            <li>תפריט מאוזן</li>
-            <li>התאמה להרגלי אכילה</li>
-            <li>תמיכה בתהליך האימונים</li>
-          </ul> -->
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- 4. CONTACT FORM -->
-  <section class="contact fade-in" id="contact1">
-    <h2>הגעת עד לכאן - כנראה שזה הזמן להתחיל</h2>
-    <p>השאירו פרטים ונחזור אליכם עם כל המידע על האימנים והתוכניות שלנו.</p>
-    <div class="form-inner" id="form1">
-      <input type="text" placeholder="שם מלא" required />
-      <input type="tel" placeholder="טלפון" pattern="[0-9]{3}-[0-9]{7}" required />
-      <input type="number" placeholder="גיל" min="1" max="99" required />
-      <select>
-        <option value="" disabled selected>מין</option>
-        <option value="זכר" >זכר</option>
-        <option value="נקבה" >נקבה</option>
-      </select>
-      <input type="email" placeholder="מייל" required />
-      <input type="text" placeholder="מה המטרה שלך?" required />
-      <input type="text" placeholder="איך הגעת אלינו?" required />
-      <button class="btn-submit" onclick="submitForm('form1', 'success1')">שלחו פרטים</button>
-      <div class="success-msg" id="success1">ברוך/ה הבא/ה! 💪
-        <br>
-        הפרטים התקבלו ואנחנו ניצור איתך קשר בקרוב כדי להתחיל את התהליך.
-        <br>
-        הצעד הראשון כבר מאחוריך 😉🔥</div>
-    </div>
-  </section>
-  
-  <!-- 5. REVIEWS -->
-  <section class="reviews fade-in">
-    <h2 class="section-title">לקוחות מספרים</h2>
-    <div class="reviews-grid">
+        <!-- תוכניות תזונה -->
+        <div class="service-card" onclick="toggleService(this)">
+          <div class="service-card-header">
+            <!-- <div class="service-icon">🍎</div> -->
+            <img
+              class="service-icon-img"
+              src="assets/imegs/icon-food.png"
+              alt="icon-food"
+            />
+            <span class="service-name">תוכניות תזונה</span>
+            <span class="service-arrow">▼</span>
+          </div>
+          <div class="service-body">
+            <div class="service-subtitle">תזונה כחלק בלתי נפרד מההצלחה</div>
+            <p class="service-desc">
+              תזונה נכונה ואיכותית היא הבסיס לכל תהליך שבו יש צורך או רצון לשפר
+              את מדדי הגוף. אצלנו ב-JordanPro תקבלו תוכניות תזונה מותאמות אישית
+              בהתאם לאורח החיים, למטרות ולצרכים הפיזיולוגיים שלכם. המטרה היא
+              ליצור שגרת תזונה מאוזנת, בריאה וקלה ליישום, שניתן להתמיד בה לאורך
+              זמן.
+              <br />
+              התוכנית מתחשבת בהרגלי אכילה, שעות עבודה, העדפות אישיות ורמת פעילות
+              גופנית. אנו נותנים דגש על איזון בין כל מרכיבי המזון השונים תוך
+              שמירה על אנרגיה גבוהה במהלך היום והתאמה מלאה לשגרת האימונים.
+            </p>
+            <div class="service-subtitle">ליווי ומעקב לאורך הדרך</div>
+            <p class="service-desc">
+              מעבר לבניית התכנית, תקבלו מאיתנו גם ליווי שוטף, התאמות לפי קצב
+              ההתקדמות ומענה לשאלות שעולות בדרך. כך ניתן להבטיח שהתהליך יהיה
+              אפקטיבי, מאוזן ובריא שיוביל לתוצאות אמיתיות שנשמרות לאורך זמן.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- שיחה 1 -->
-    <div class="wa-chat">
-      <div class="wa-header">
-        <div class="wa-avatar">ד</div>
-        <div class="wa-info">
-          <span class="wa-name">דנה כהן</span>
-          <span class="wa-tag">לקוחה מרוצה</span>
+    <!-- 4. CONTACT FORM -->
+    <section class="contact fade-in" id="contact1">
+      <h2>הגעת עד לכאן - כנראה שזה הזמן להתחיל</h2>
+      <p>השאירו פרטים ונחזור אליכם עם כל המידע על האימנים והתוכניות שלנו.</p>
+      <div class="form-inner" id="form1">
+        <input type="text" placeholder="שם מלא" required />
+        <input
+          type="tel"
+          placeholder="טלפון"
+          pattern="[0-9]{3}-[0-9]{7}"
+          required
+        />
+        <input type="number" placeholder="גיל" min="1" max="99" required />
+        <select>
+          <option value="" disabled selected>מין</option>
+          <option value="זכר">זכר</option>
+          <option value="נקבה">נקבה</option>
+        </select>
+        <input type="email" placeholder="מייל" required />
+        <input type="text" placeholder="מה המטרה שלך?" required />
+        <input type="text" placeholder="איך הגעת אלינו?" required />
+        <button class="btn-submit" onclick="submitForm('form1', 'success1')">
+          שלחו פרטים
+        </button>
+        <div class="success-msg" id="success1">
+          ברוך/ה הבא/ה! 💪
+          <br />
+          הפרטים התקבלו ואנחנו ניצור איתך קשר בקרוב כדי להתחיל את התהליך.
+          <br />
+          הצעד הראשון כבר מאחוריך 😉🔥
         </div>
       </div>
-      <div class="wa-messages">
-        <div class="wa-bubble wa-in">
-          היי! רציתי להגיד שאחרי חודשיים של אימונים ב-Jordan PRO אני פשוט לא מאמינה לתוצאות 🔥
-          <span class="wa-time">10:42</span>
-        </div>
-        <div class="wa-bubble wa-in">
-          <span class="wa-stars">★★★★★</span>
-          <span class="wa-time">10:43</span>
-        </div>
-        <div class="wa-bubble wa-out">
-          תודה דנה! שמחים לשמוע 💪
-          <span class="wa-time">10:45</span>
-        </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- שיחה 2 -->
-    <div class="wa-chat">
-      <div class="wa-header">
-        <div class="wa-avatar">י</div>
-        <div class="wa-info">
-          <span class="wa-name">יוסי מזרחי</span>
-          <span class="wa-tag">לקוח מרוצה</span>
+    <!-- 5. REVIEWS -->
+    <section class="reviews fade-in">
+      <h2 class="section-title">לקוחות מספרים</h2>
+      <div class="reviews-grid">
+        <!-- שיחה 1 -->
+        <div class="wa-chat">
+          <div class="wa-header">
+            <div class="wa-avatar">ד</div>
+            <div class="wa-info">
+              <span class="wa-name">דנה כהן</span>
+              <span class="wa-tag">לקוחה מרוצה</span>
+            </div>
+          </div>
+          <div class="wa-messages">
+            <div class="wa-bubble wa-in">
+              היי! רציתי להגיד שאחרי חודשיים של אימונים ב-Jordan PRO אני פשוט לא
+              מאמינה לתוצאות 🔥
+              <span class="wa-time">10:42</span>
+            </div>
+            <div class="wa-bubble wa-in">
+              <span class="wa-stars">★★★★★</span>
+              <span class="wa-time">10:43</span>
+            </div>
+            <div class="wa-bubble wa-out">
+              תודה דנה! שמחים לשמוע 💪
+              <span class="wa-time">10:45</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="wa-messages">
-        <div class="wa-bubble wa-in">
-          ירדתי 8 קילו תוך 3 חודשים!! התוכנית פשוט עובדת 🙌
-          <span class="wa-time">09:15</span>
-        </div>
-        <div class="wa-bubble wa-in">
-          <span class="wa-stars">★★★★★</span>
-          <span class="wa-time">09:15</span>
-        </div>
-        <div class="wa-bubble wa-out">
-          כל הכבוד יוסי! אתה השקעת ותוצאה 💪
-          <span class="wa-time">09:20</span>
-        </div>
-      </div>
-    </div>
 
-    <!-- שיחה 3 -->
-    <div class="wa-chat">
-      <div class="wa-header">
-        <div class="wa-avatar">מ</div>
-        <div class="wa-info">
-          <span class="wa-name">מיכל רוזן</span>
-          <span class="wa-tag">לקוחה מרוצה</span>
+        <!-- שיחה 2 -->
+        <div class="wa-chat">
+          <div class="wa-header">
+            <div class="wa-avatar">י</div>
+            <div class="wa-info">
+              <span class="wa-name">יוסי מזרחי</span>
+              <span class="wa-tag">לקוח מרוצה</span>
+            </div>
+          </div>
+          <div class="wa-messages">
+            <div class="wa-bubble wa-in">
+              ירדתי 8 קילו תוך 3 חודשים!! התוכנית פשוט עובדת 🙌
+              <span class="wa-time">09:15</span>
+            </div>
+            <div class="wa-bubble wa-in">
+              <span class="wa-stars">★★★★★</span>
+              <span class="wa-time">09:15</span>
+            </div>
+            <div class="wa-bubble wa-out">
+              כל הכבוד יוסי! אתה השקעת ותוצאה 💪
+              <span class="wa-time">09:20</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="wa-messages">
-        <div class="wa-bubble wa-in">
-          האווירה פה פשוט מטורפת, כיף לבוא לאימון כל יום!
-          <span class="wa-time">20:30</span>
-        </div>
-        <div class="wa-bubble wa-in">
-          <span class="wa-stars">★★★★★</span>
-          <span class="wa-time">20:30</span>
-        </div>
-        <div class="wa-bubble wa-out">
-          תודה מיכל! מחכים לך מחר 😊
-          <span class="wa-time">20:35</span>
-        </div>
-      </div>
-    </div>
 
-    <!-- שיחה 4 -->
-    <div class="wa-chat">
-      <div class="wa-header">
-        <div class="wa-avatar">מ</div>
-        <div class="wa-info">
-          <span class="wa-name">דוד לוי</span>
-          <span class="wa-tag">לקוח מרוצה</span>
+        <!-- שיחה 3 -->
+        <div class="wa-chat">
+          <div class="wa-header">
+            <div class="wa-avatar">מ</div>
+            <div class="wa-info">
+              <span class="wa-name">מיכל רוזן</span>
+              <span class="wa-tag">לקוחה מרוצה</span>
+            </div>
+          </div>
+          <div class="wa-messages">
+            <div class="wa-bubble wa-in">
+              האווירה פה פשוט מטורפת, כיף לבוא לאימון כל יום!
+              <span class="wa-time">20:30</span>
+            </div>
+            <div class="wa-bubble wa-in">
+              <span class="wa-stars">★★★★★</span>
+              <span class="wa-time">20:30</span>
+            </div>
+            <div class="wa-bubble wa-out">
+              תודה מיכל! מחכים לך מחר 😊
+              <span class="wa-time">20:35</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="wa-messages">
-        <div class="wa-bubble wa-out">
-          בוקר טוב אלוףף
-          <span class="wa-time">10:35</span>
-        </div>
-        <div class="wa-bubble wa-out">
-          שקילות, אנחנו על הגל
-          <span class="wa-time">10:35</span>
-        </div>
-        <div class="wa-bubble wa-in">
-          בוקר טוב אחיי
-          <span class="wa-time">10:37</span>
-        </div>
-        <div class="wa-bubble wa-in">
-        אני כבר אחרי אימון כוח
-          <span class="wa-time">10:37</span>
-        </div>
-        <div class="wa-bubble wa-in">
-          נשקלתי בבוקר , קילו וחצי משבוע שעברררר
-          <span class="wa-time">10:37</span>
-        </div>
-        
-        <div class="wa-bubble wa-out">
-        מלךך!!
-          <span class="wa-time">10:38</span>
-        </div>
-      </div>
-    </div>
 
-    <!-- שיחה 5 -->
-    <div class="wa-chat">
-      <div class="wa-header">
-        <div class="wa-avatar">מ</div>
-        <div class="wa-info">
-          <span class="wa-name">יעל שבו</span>
-          <span class="wa-tag">לקוחה מרוצה</span>
-        </div>
-      </div>
-      <div class="wa-bubble wa-in">
-        בוקרר, עכשיו אני מקדימה אותךך
-        <span class="wa-time">10:39</span>
-      </div>
-      <div class="wa-bubble wa-in">
-        ירידה של חצי קילו משבוע שעברר
-        <span class="wa-time">10:39</span>
-      </div>
-      <div class="wa-messages">
-        <div class="wa-bubble wa-out">
-          חחחחחחח בוקר אורר
-          <span class="wa-time">10:39</span>
-        </div>
-        <div class="wa-bubble wa-in">
-        תקשיבב, הגינס עולה עלי והוא לא צמודדד
-          <span class="wa-time">10:40</span>
-        </div>
-        <div class="wa-bubble wa-out">
-          דיי איזה כיףף
-          <span class="wa-time">10:41</span>
-        </div>
-        <div class="wa-bubble wa-out">
-        אלופה, זה לגמרי בזכותך
-          <span class="wa-time">10:41</span>
-        </div>
-      </div>
-    </div>
+        <!-- שיחה 4 -->
+        <div class="wa-chat">
+          <div class="wa-header">
+            <div class="wa-avatar">מ</div>
+            <div class="wa-info">
+              <span class="wa-name">דוד לוי</span>
+              <span class="wa-tag">לקוח מרוצה</span>
+            </div>
+          </div>
+          <div class="wa-messages">
+            <div class="wa-bubble wa-out">
+              בוקר טוב אלוףף
+              <span class="wa-time">10:35</span>
+            </div>
+            <div class="wa-bubble wa-out">
+              שקילות, אנחנו על הגל
+              <span class="wa-time">10:35</span>
+            </div>
+            <div class="wa-bubble wa-in">
+              בוקר טוב אחיי
+              <span class="wa-time">10:37</span>
+            </div>
+            <div class="wa-bubble wa-in">
+              אני כבר אחרי אימון כוח
+              <span class="wa-time">10:37</span>
+            </div>
+            <div class="wa-bubble wa-in">
+              נשקלתי בבוקר , קילו וחצי משבוע שעברררר
+              <span class="wa-time">10:37</span>
+            </div>
 
-    <!-- שיחה 6 -->
-    <div class="wa-chat">
-      <div class="wa-header">
-        <div class="wa-avatar">מ</div>
-        <div class="wa-info">
-          <span class="wa-name">Jorden Pro</span>
-          <span class="wa-tag">הנבחרת של Jordan Pro</span>
+            <div class="wa-bubble wa-out">
+              מלךך!!
+              <span class="wa-time">10:38</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="wa-bubble wa-in">
-        מדברת בשם כולן... (מקווה) 
-        עידן ואופיר היקרים,
-        רצינו לומר תודה ענקית על ערב מיוחד, מדויק ומרגיע – ערב "מרגיעה" שכולו נשימה, תנועה ושלווה.
-        היוזמה שלכם לאירוע כזה, דווקא בתקופה הזו, הייתה בול בזמן ובמקום הנכון. לקחתם את כולנו לרגע של עצירה, חיבור לגוף ולנפש, ופשוט – נתתם לנו מתנה
-        תודה מיוחדת למורות המדהימות עדה ולושי, שהעבירו את שיעורי היוגה והפילאטיס בצורה מקצועית, רגישה ומרוממת. הצלחתן לרכך שרירים ולפתוח לבבות – ואין עליכן!
-        
-        עידן ואופיר – תודה על כל ההשקעה, החשיבה, הפרטים הקטנים, ההכלה והאכפתיות. כשאתם יוזמים משהו – זה תמיד מרגיש נכון.
-        
-        היה מושלם.  
-        כבר מחכות לפעם הבאה!!
-        <span class="wa-time">21:39</span>
-      </div>
-      <!-- <div class="wa-bubble wa-out">
+
+        <!-- שיחה 5 -->
+        <div class="wa-chat">
+          <div class="wa-header">
+            <div class="wa-avatar">מ</div>
+            <div class="wa-info">
+              <span class="wa-name">יעל שבו</span>
+              <span class="wa-tag">לקוחה מרוצה</span>
+            </div>
+          </div>
+          <div class="wa-bubble wa-in">
+            בוקרר, עכשיו אני מקדימה אותךך
+            <span class="wa-time">10:39</span>
+          </div>
+          <div class="wa-bubble wa-in">
+            ירידה של חצי קילו משבוע שעברר
+            <span class="wa-time">10:39</span>
+          </div>
+          <div class="wa-messages">
+            <div class="wa-bubble wa-out">
+              חחחחחחח בוקר אורר
+              <span class="wa-time">10:39</span>
+            </div>
+            <div class="wa-bubble wa-in">
+              תקשיבב, הגינס עולה עלי והוא לא צמודדד
+              <span class="wa-time">10:40</span>
+            </div>
+            <div class="wa-bubble wa-out">
+              דיי איזה כיףף
+              <span class="wa-time">10:41</span>
+            </div>
+            <div class="wa-bubble wa-out">
+              אלופה, זה לגמרי בזכותך
+              <span class="wa-time">10:41</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- שיחה 6 -->
+        <div class="wa-chat">
+          <div class="wa-header">
+            <div class="wa-avatar">מ</div>
+            <div class="wa-info">
+              <span class="wa-name">Jorden Pro</span>
+              <span class="wa-tag">הנבחרת של Jordan Pro</span>
+            </div>
+          </div>
+          <div class="wa-bubble wa-in">
+            מדברת בשם כולן... (מקווה) עידן ואופיר היקרים, רצינו לומר תודה ענקית
+            על ערב מיוחד, מדויק ומרגיע – ערב "מרגיעה" שכולו נשימה, תנועה ושלווה.
+            היוזמה שלכם לאירוע כזה, דווקא בתקופה הזו, הייתה בול בזמן ובמקום
+            הנכון. לקחתם את כולנו לרגע של עצירה, חיבור לגוף ולנפש, ופשוט – נתתם
+            לנו מתנה תודה מיוחדת למורות המדהימות עדה ולושי, שהעבירו את שיעורי
+            היוגה והפילאטיס בצורה מקצועית, רגישה ומרוממת. הצלחתן לרכך שרירים
+            ולפתוח לבבות – ואין עליכן! עידן ואופיר – תודה על כל ההשקעה, החשיבה,
+            הפרטים הקטנים, ההכלה והאכפתיות. כשאתם יוזמים משהו – זה תמיד מרגיש
+            נכון. היה מושלם. כבר מחכות לפעם הבאה!!
+            <span class="wa-time">21:39</span>
+          </div>
+          <!-- <div class="wa-bubble wa-out">
         אין על הצוות האנשים הלב של המקום תודה על החשיבה לעומק על כל הפרטים הקטנים!!!
         לאילנית ועדה על האימון המיוחד בחוץ
         לשובל שעודדה אותי לא להפסיק פירמידות😂😂😂
@@ -335,102 +375,131 @@
         תודה לכם על הכל!!
         <span class="wa-time">21:39</span>
       </div> -->
-      <div class="wa-messages">
-        <div class="wa-bubble wa-in">
-          עידן ואופיר האלופים!!!
-          והמדריכות שחלק ענק מהכל😍
-          תודה רבה על עוד ערב מושקע, מגבש ומהנה,
-          בניתם כאן משפחה קטנה באווירה מטורפת שרק רוצה להיפגש, להתאמן ולהנות והכל בזכותכם!
-          תודה על המקום הכי חם בעיר🔥
-          <span class="wa-time">10:39</span>
+          <div class="wa-messages">
+            <div class="wa-bubble wa-in">
+              עידן ואופיר האלופים!!! והמדריכות שחלק ענק מהכל😍 תודה רבה על עוד
+              ערב מושקע, מגבש ומהנה, בניתם כאן משפחה קטנה באווירה מטורפת שרק
+              רוצה להיפגש, להתאמן ולהנות והכל בזכותכם! תודה על המקום הכי חם
+              בעיר🔥
+              <span class="wa-time">10:39</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    
-  </div>
-</section>
-  
-  <!-- 6. RESULTS - BEFORE / AFTER  -->
-  <section class="results fade-in">
-    <h2 class="section-title">תוצאות מהשטח</h2>
-    <div class="results-carousel-wrapper">
-    <button class="results-btn prev" onclick="scrollResults(-1)">‹</button>
-    <div class="results-track" id="resultsTrack">
+    </section>
 
-      <div class="ba-card">
-        <div class="ba-label">
-          <span class="before">לפני</span>
-          <span class="arrow">←</span>
-          <span class="after">אחרי</span>
+    <!-- 6. RESULTS - BEFORE / AFTER  -->
+    <section class="results fade-in">
+      <h2 class="section-title">תוצאות מהשטח</h2>
+      <div class="results-carousel-wrapper">
+        <button class="trainers-btn prev" onclick="scrollTrainers(-1)">
+          ‹
+        </button>
+        <div class="results-track" id="resultsTrack">
+          <div class="ba-card">
+            <div class="ba-label">
+              <span class="before">לפני</span>
+              <span class="arrow">←</span>
+              <span class="after">אחרי</span>
+            </div>
+            <img
+              class="ba-img"
+              src="assets/imegs/results/1.png"
+              alt="תוצאה 1"
+            />
+          </div>
+
+          <div class="ba-card">
+            <div class="ba-label">
+              <span class="before">לפני</span>
+              <span class="arrow">←</span>
+              <span class="after">אחרי</span>
+            </div>
+            <img
+              class="ba-img"
+              src="assets/imegs/results/2.png"
+              alt="תוצאה 2"
+            />
+          </div>
+
+          <div class="ba-card">
+            <div class="ba-label">
+              <span class="before">לפני</span>
+              <span class="arrow">←</span>
+              <span class="after">אחרי</span>
+            </div>
+            <img
+              class="ba-img"
+              src="assets/imegs/results/3.png"
+              alt="תוצאה 3"
+            />
+          </div>
+
+          <div class="ba-card">
+            <div class="ba-label">
+              <span class="before">לפני</span>
+              <span class="arrow">←</span>
+              <span class="after">אחרי</span>
+            </div>
+            <img
+              class="ba-img"
+              src="assets/imegs/results/4.png"
+              alt="תוצאה 4"
+            />
+          </div>
+
+          <div class="ba-card">
+            <div class="ba-label">
+              <span class="before">לפני</span>
+              <span class="arrow">←</span>
+              <span class="after">אחרי</span>
+            </div>
+            <img
+              class="ba-img"
+              src="assets/imegs/results/5.png"
+              alt="תוצאה 5"
+            />
+          </div>
+
+          <div class="ba-card">
+            <div class="ba-label">
+              <span class="before">לפני</span>
+              <span class="arrow">←</span>
+              <span class="after">אחרי</span>
+            </div>
+            <img
+              class="ba-img"
+              src="assets/imegs/results/6.png"
+              alt="תוצאה 6"
+            />
+          </div>
+
+          <div class="ba-card">
+            <div class="ba-label">
+              <span class="before">לפני</span>
+              <span class="arrow">←</span>
+              <span class="after">אחרי</span>
+            </div>
+            <img
+              class="ba-img"
+              src="assets/imegs/results/7.png"
+              alt="תוצאה 7"
+            />
+          </div>
         </div>
-        <img class="ba-img" src="assets/imegs/results/1.png" alt="תוצאה 1"/>
+        <button class="results-btn next" onclick="scrollResults(1)">›</button>
       </div>
+    </section>
 
-      <div class="ba-card">
-        <div class="ba-label">
-          <span class="before">לפני</span>
-          <span class="arrow">←</span>
-          <span class="after">אחרי</span>
-        </div>
-        <img class="ba-img" src="assets/imegs/results/2.png" alt="תוצאה 2"/>
-      </div>
-
-      <div class="ba-card">
-        <div class="ba-label">
-          <span class="before">לפני</span>
-          <span class="arrow">←</span>
-          <span class="after">אחרי</span>
-        </div>
-        <img class="ba-img" src="assets/imegs/results/3.png" alt="תוצאה 3"/>
-      </div>
-
-      <div class="ba-card">
-        <div class="ba-label">
-          <span class="before">לפני</span>
-          <span class="arrow">←</span>
-          <span class="after">אחרי</span>
-        </div>
-        <img class="ba-img" src="assets/imegs/results/4.png" alt="תוצאה 4"/>
-      </div>
-
-      <div class="ba-card">
-        <div class="ba-label">
-          <span class="before">לפני</span>
-          <span class="arrow">←</span>
-          <span class="after">אחרי</span>
-        </div>
-        <img class="ba-img" src="assets/imegs/results/5.png" alt="תוצאה 5"/>
-      </div>
-
-      <div class="ba-card">
-        <div class="ba-label">
-          <span class="before">לפני</span>
-          <span class="arrow">←</span>
-          <span class="after">אחרי</span>
-        </div>
-        <img class="ba-img" src="assets/imegs/results/6.png" alt="תוצאה 6"/>
-      </div>
-
-      <div class="ba-card">
-        <div class="ba-label">
-          <span class="before">לפני</span>
-          <span class="arrow">←</span>
-          <span class="after">אחרי</span>
-        </div>
-        <img class="ba-img" src="assets/imegs/results/7.png" alt="תוצאה 7"/>
-      </div>
-
-    </div>
-    <button class="results-btn next" onclick="scrollResults(1)">›</button>
-  </div>
-  </section>
-  
-  <!-- 7. TRAINERS -->
-  <section class="trainers fade-in">
-    <h2 class="section-title">הכירו את המאמנים שלנו </h2>
-    <div class="trainers-cards">
-      <!-- מאמן לדוגמא -->
-      <!-- <div class="trainer-card">
+    <!-- 7. TRAINERS -->
+    <section class="trainers fade-in">
+      <h2 class="section-title">הכירו את המאמנים שלנו</h2>
+      <div class="trainers-wrapper">
+        <button class="trainers-btn prev" onclick="scrollTrainers(-1)">
+          ‹
+        </button>
+        <!-- מאמן לדוגמא -->
+        <!-- <div class="trainer-card">
         <img class="trainer-img" src="" alt="" />
         <div class="trainer-info">
           <div class="trainer-name"> </div>
@@ -438,154 +507,266 @@
           <p class="trainer-bio" > </p>
         </div>
       </div> -->
+        <div class="trainers-track" id="trainersTrack">
+          <!-- אופיר שבני -->
+          <div class="trainer-card">
+            <img
+              class="trainer-img"
+              src="assets/imegs/Trainers/Coach - Ofir.png"
+              alt="אופיר שבני"
+            />
+            <div class="trainer-info">
+              <div class="trainer-name">אופיר שבני</div>
+              <div class="trainer-role">
+                מנכ"ל ובעלים , מאמן כושר אישי
+                <br />
+              </div>
+              <p class="trainer-bio">
+                מתמחה באימוני כוח ואירובי, מאמין בהתמדה, מקצועיות ויחס אישי לכל
+                מתאמן. מוביל את המתחם והצוות המקצועי.
+              </p>
+            </div>
+          </div>
 
-      <!-- אופיר שבני -->
-      <div class="trainer-card">
-        <img class="trainer-img" src="assets/imegs/Trainers/Coach - Ofir.png" alt="אופיר שבני" />
-        <div class="trainer-info">
-          <div class="trainer-name">אופיר שבני </div>
-          <div class="trainer-role"> בעלים ומייסד המקום, מאמן כושר אישי וקבוצות</div>
-          <p class="trainer-bio" >מתמחה באימוני כוח ואירובי, מאמין בהתמדה, מקצועיות ויחס אישי לכל מתאמן. מוביל את המתחם והצוות המקצועי. </p>
+          <!-- עידן שבני -->
+          <div class="trainer-card">
+            <img
+              class="trainer-img"
+              src="assets/imegs/Trainers/Coach - Idan.png"
+              alt="עידן שבני"
+            />
+            <div class="trainer-info">
+              <div class="trainer-name">עידן שבני</div>
+              <div class="trainer-role">בעלים ומאמן כושר אישי וקבוצות</div>
+              <p class="trainer-bio">
+                מאמן גברים ונשים באימוני כוח ואירובי, מתמקד בשיפור כושר, חיזוק
+                הגוף ובניית תוכניות אימון מותאמות אישית.
+              </p>
+            </div>
+          </div>
+
+          <!-- אילנית לושי-->
+          <div class="trainer-card">
+            <img
+              class="trainer-img"
+              src="assets/imegs/Trainers/Coach - Ilanit.png"
+              alt="אילנית לושי"
+            />
+            <div class="trainer-info">
+              <div class="trainer-name">אילנית לושי</div>
+              <div class="trainer-role">מאמנת פילאטיס וכוח לקבוצות</div>
+              <p class="trainer-bio">
+                מתמחה בפילאטיס, חיזוק שרירי ליבה ושיפור יציבה. מעבירה אימונים
+                קבוצתיים באווירה מקצועית ונעימה.
+              </p>
+            </div>
+          </div>
+
+          <!-- שובל כהן -->
+          <div class="trainer-card">
+            <img
+              class="trainer-img"
+              src="assets/imegs/Trainers/Coach - Shoval.png"
+              alt="שובל כהן"
+            />
+            <div class="trainer-info">
+              <div class="trainer-name">שובל כהן</div>
+              <div class="trainer-role">מאמנת כוח ואירובי לקבוצות</div>
+              <p class="trainer-bio">
+                מאמנת עם 7 שנות ניסיון, מתמחה באימוני כוח ואירובי. דוגלת באימון
+                מהנה, אנרגטי ומאתגר.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="trainers-btn next" onclick="scrollTrainers(1)">›</button>
+      </div>
+    </section>
+
+    <!-- 8. CONTACT FORM -->
+    <section class="contact fade-in" id="contact2">
+      <h2>הגעת עד לכאן - לא תשאיר\י פרטים?</h2>
+      <p>השאירו פרטים ונחזור אליכם עם כל המידע על האימנים והתוכניות שלנו.</p>
+      <div class="form-inner" id="form2">
+        <input type="text" placeholder="שם מלא" required />
+        <input
+          type="tel"
+          placeholder="טלפון"
+          pattern="[0-9]{3}-[0-9]{7}"
+          required
+        />
+        <input type="number" placeholder="גיל" min="1" max="99" required />
+        <select>
+          <option value="" disabled selected>מין</option>
+          <option value="זכר">זכר</option>
+          <option value="נקבה">נקבה</option>
+        </select>
+        <input type="email" placeholder="מייל" required />
+        <input type="text" placeholder="מה המטרה שלך?" required />
+        <input type="text" placeholder="איך הגעת אלינו?" required />
+        <button class="btn-submit" onclick="submitForm('form2', 'success2')">
+          שלחו פרטים
+        </button>
+        <div class="success-msg" id="success2">
+          איזה כיף שפנית אלינו! 🔥
+          <br />
+          הפרטים התקבלו ואנחנו ניצור איתך קשר ממש בקרוב
+          <br />
+          תתכונן/י – הולכים לעבוד 💪
         </div>
       </div>
+    </section>
 
-      <!-- עידן שבני -->
-      <div class="trainer-card">
-        <img class="trainer-img" src="assets/imegs/Trainers/Coach - Idan.png" alt="עידן שבני" />
-        <div class="trainer-info">
-          <div class="trainer-name">עידן שבני </div>
-          <div class="trainer-role"> בעלים ומאמן כושר אישי וקבוצות</div>
-          <p class="trainer-bio" >מאמן גברים ונשים באימוני כוח ואירובי, מתמקד בשיפור כושר, חיזוק הגוף ובניית תוכניות אימון מותאמות אישית. </p>
+    <!-- 9. MORE INFORMATION -->
+    <section class="more-info fade-in">
+      <h2 class="section-title">אולי יעניין אותך...</h2>
+      <div class="more-info-wrapper">
+        <button class="more-btn prev" onclick="scrollMore(-1)">‹</button>
+        <div class="more-track" id="moreTrack">
+          <a
+            class="more-card"
+            href="https://www.instagram.com/p/DWWl4yojEnU/?igsh=MjZhcWd5NW4zNmo="
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="assets/imegs/posts/1.jpeg" alt="טיפ אימון" />
+            <div class="more-caption">
+              רעיונות לארוחות בוקר שפותחות את היום נכון
+            </div>
+          </a>
+
+          <a
+            class="more-card"
+            href="https://www.instagram.com/reel/DVbYt6WDMay/?igsh=bG4wbHV5bHZzbm84"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="assets/imegs/posts/2.jpeg" alt="טיפי תזונה" />
+            <div class="more-caption">
+              איזון ושפיות — זה הבסיס להתמדה אמיתית
+            </div>
+          </a>
+
+          <a
+            class="more-card"
+            href="https://www.instagram.com/p/DSVPDUFDOYY/?igsh=MTI1aGVidXZxZ21kMw=="
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="assets/imegs/posts/3.jpeg" alt="מדריך שיקום" />
+            <div class="more-caption">זה לא את זה השיטה</div>
+          </a>
+
+          <a
+            class="more-card"
+            href="https://www.instagram.com/p/DRPuNlQjLI2/?img_index=2&igsh=ajY3bTNqZWR3NmJs"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="assets/imegs/posts/4.jpeg" alt="אימון בית" />
+            <div class="more-caption">
+              חלבונים, פחמימות ושומנים — האיזון שעושה את ההבדל
+            </div>
+          </a>
+
+          <a
+            class="more-card"
+            href="https://www.instagram.com/p/DPy69tEjHbr/?igsh=dGNycmpoYzVnajJx"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="assets/imegs/posts/5.jpeg" alt="כושר מנטלי" />
+            <div class="more-caption">
+              5 טעויות קטנות שהורסות לך את כל החיטוב
+            </div>
+          </a>
+        </div>
+        <button class="more-btn next" onclick="scrollMore(1)">›</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <!-- צד שמאל — קרדיט -->
+        <p class="footer-copy">© Jordan Pro</p>
+
+        <!-- צד ימין — אייקונים -->
+        <div class="footer-icons">
+          <!-- טלפון -->
+          <a href="tel:+972503777486" aria-label="התקשר אלינו">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .89h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+              />
+            </svg>
+          </a>
+
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/972503777486?text=היי%20Jordan%20PRO%2C%20אני%20מתעניין%2Fת%20ורוצה%20לשמוע%20עוד%20פרטים%20על%20האימונים%20😊"
+            target="_blank"
+            rel="noopener"
+            aria-label="וואטסאפ"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+              />
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/jordan__pro?igsh=MTV4eXpldndvM2phcA=="
+            target="_blank"
+            rel="noopener"
+            aria-label="אינסטגרם"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle
+                cx="17.5"
+                cy="6.5"
+                r="0.5"
+                fill="currentColor"
+                stroke="none"
+              />
+            </svg>
+          </a>
+
+          <!-- Facebook -->
+          <a
+            href="https://www.facebook.com/share/1AqCXNKNhM/?mibextid=wwXIfr"
+            target="_blank"
+            rel="noopener"
+            aria-label="פייסבוק"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+              />
+            </svg>
+          </a>
         </div>
       </div>
+    </footer>
 
-      <!-- אילנית לושי-->
-      <div class="trainer-card">
-        <img class="trainer-img" src="assets/imegs/Trainers/Coach - Ilanit.png" alt="אילנית לושי" />
-        <div class="trainer-info">
-          <div class="trainer-name">אילנית לושי </div>
-          <div class="trainer-role">מאמנת פילאטיס וכוח לקבוצות </div>
-          <p class="trainer-bio" > מתמחה בפילאטיס, חיזוק שרירי ליבה ושיפור יציבה. מעבירה אימונים קבוצתיים באווירה מקצועית ונעימה.</p>
-        </div>
-      </div>
-
-      <!-- שובל כהן -->
-      <div class="trainer-card">
-        <img class="trainer-img" src="assets/imegs/Trainers/Coach - Shoval.png" alt="שובל כהן" />
-        <div class="trainer-info">
-          <div class="trainer-name"> שובל כהן</div>
-          <div class="trainer-role"> מאמנת כוח ואירובי לקבוצות</div>
-          <p class="trainer-bio" > מאמנת עם 7 שנות ניסיון, מתמחה באימוני כוח ואירובי. דוגלת באימון מהנה, אנרגטי ומאתגר.</p>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  
-  <!-- 8. CONTACT FORM -->
-  <section class="contact fade-in" id="contact2">
-    <h2>הגעת עד לכאן - לא תשאיר\י פרטים?</h2>
-    <p>השאירו פרטים ונחזור אליכם עם כל המידע על האימנים והתוכניות שלנו.</p>
-    <div class="form-inner" id="form2">
-      <input type="text" placeholder="שם מלא" required />
-      <input type="tel" placeholder="טלפון" pattern="[0-9]{3}-[0-9]{7}" required />
-      <input type="number" placeholder="גיל" min="1" max="99" required />
-      <select>
-        <option value="" disabled selected>מין</option>
-        <option value="זכר" >זכר</option>
-        <option value="נקבה" >נקבה</option>
-      </select>
-      <input type="email" placeholder="מייל" required />
-      <input type="text" placeholder="מה המטרה שלך?" required />
-      <input type="text" placeholder="איך הגעת אלינו?" required />
-      <button class="btn-submit" onclick="submitForm('form2', 'success2')">שלחו פרטים</button>
-      <div class="success-msg" id="success2">איזה כיף שפנית אלינו! 🔥
-        <br>
-        הפרטים התקבלו ואנחנו ניצור איתך קשר ממש בקרוב
-        <br>
-        תתכונן/י – הולכים לעבוד 💪</div>
-    </div>
-  </section>
-  
-  <!-- 9. MORE INFORMATION -->
-<section class="more-info fade-in">
-  <h2 class="section-title">אולי יעניין אותך...</h2>
-  <div class="more-info-wrapper">
-    <button class="more-btn prev" onclick="scrollMore(-1)">‹</button>
-    <div class="more-track" id="moreTrack">
-
-      <a class="more-card" href="https://www.instagram.com/p/DWWl4yojEnU/?igsh=MjZhcWd5NW4zNmo=" target="_blank" rel="noopener">
-        <img src="assets/imegs/posts/1.jpeg" alt="טיפ אימון"/>
-        <div class="more-caption">רעיונות לארוחות בוקר שפותחות את היום נכון</div>
-      </a>
-
-      <a class="more-card" href="https://www.instagram.com/reel/DVbYt6WDMay/?igsh=bG4wbHV5bHZzbm84" target="_blank" rel="noopener">
-        <img src="assets/imegs/posts/2.jpeg" alt="טיפי תזונה"/>
-        <div class="more-caption">איזון ושפיות — זה הבסיס להתמדה אמיתית</div>
-      </a>
-
-      <a class="more-card" href="https://www.instagram.com/p/DSVPDUFDOYY/?igsh=MTI1aGVidXZxZ21kMw==" target="_blank" rel="noopener">
-        <img src="assets/imegs/posts/3.jpeg" alt="מדריך שיקום"/>
-        <div class="more-caption">זה לא את זה השיטה</div>
-      </a>
-
-      <a class="more-card" href="https://www.instagram.com/p/DRPuNlQjLI2/?img_index=2&igsh=ajY3bTNqZWR3NmJs" target="_blank" rel="noopener">
-        <img src="assets/imegs/posts/4.jpeg" alt="אימון בית"/>
-        <div class="more-caption">חלבונים, פחמימות ושומנים — האיזון שעושה את ההבדל</div>
-      </a>
-
-      <a class="more-card" href="https://www.instagram.com/p/DPy69tEjHbr/?igsh=dGNycmpoYzVnajJx" target="_blank" rel="noopener">
-        <img src="assets/imegs/posts/5.jpeg" alt="כושר מנטלי"/>
-        <div class="more-caption">5 טעויות קטנות שהורסות לך את כל החיטוב</div>
-      </a>
-
-    </div>
-    <button class="more-btn next" onclick="scrollMore(1)">›</button>
-  </div>
-</section>
-
-  <footer>
-  <div class="footer-inner">
-
-    <!-- צד שמאל — קרדיט -->
-    <p class="footer-copy">© Jordan Pro</p>
-
-    <!-- צד ימין — אייקונים -->
-    <div class="footer-icons">
-      <!-- טלפון -->
-      <a href="tel:+972503777486" aria-label="התקשר אלינו">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .89h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-        </svg>
-      </a>
-
-      <!-- WhatsApp -->
-      <a href="https://wa.me/972503777486?text=היי%20Jordan%20PRO%2C%20אני%20מתעניין%2Fת%20ורוצה%20לשמוע%20עוד%20פרטים%20על%20האימונים%20😊" target="_blank" rel="noopener" aria-label="וואטסאפ">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-        </svg>
-      </a>
-
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/jordan__pro?igsh=MTV4eXpldndvM2phcA==" target="_blank" rel="noopener" aria-label="אינסטגרם">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-          <circle cx="12" cy="12" r="4"/>
-          <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
-        </svg>
-      </a>
-
-      <!-- Facebook -->
-      <a href="https://www.facebook.com/share/1AqCXNKNhM/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="פייסבוק">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-        </svg>
-      </a>
-
-    </div>
-  </div>
-</footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

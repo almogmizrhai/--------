@@ -25,6 +25,12 @@ function scrollMore(dir) {
     track.scrollBy({ left: dir * -220, behavior: 'smooth' })
 }
 
+// Trainers carousel
+function scrollTrainers(dir) {
+    const track = document.getElementById('trainersTrack')
+    track.scrollBy({ left: dir * -284, behavior: 'smooth' })
+}
+
 // Form submit
 function submitForm(formId, successId) {
     const form = document.getElementById(formId)
