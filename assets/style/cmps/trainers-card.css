@@ -109,6 +109,7 @@
         &:hover {
             background: var(--black);
             color: var(--gold);
+            border-color: var(--gold);
         }
 
         &.prev { right: -22px; }
