@@ -66,7 +66,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Jordan Pro Leads
 const MY_WHATSAPP = '972503777486'  
-const SHEET_URL   = 'https://script.google.com/macros/s/AKfycbzySHOG4JL6YrdJTuIVRVWGsTIm2WnNAM-0vTGGvSDKX4cDJsh3XizaU7D8KSaA_QEa/exec'
+const SHEET_URL   = 'https://script.google.com/macros/s/AKfycby46ztBRFyETMpF590hX7mrRHNjYuMhsIaznQAg4RCrf-M0VPCC7g3DQW0EsJZceU_U/exec'
 
 async function submitForm(formId, successId) {
     const form = document.getElementById(formId)
