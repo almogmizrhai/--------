@@ -149,6 +149,20 @@ async function submitForm(formId, successId) {
     form.querySelector('select').selectedIndex = 0
 }
 
+// back-to-top
+window.addEventListener('scroll', () => {
+    const btn = document.getElementById('backToTop')
+    if (window.scrollY > 500) {
+        btn.style.display = 'flex'
+    } else {
+        btn.style.display = 'none'
+    }
+})
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
 // accessibility
 let fontSize = 100
 let isContrast = false
