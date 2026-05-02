@@ -1,0 +1,31 @@
+/* back-to-top cmp  */
+
+.back-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 60px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--beige);
+    color: var(--black);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;        
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    transition: background 0.2s, transform 0.2s;
+    z-index: 9998;
+
+    &:hover {
+        background: var(--gold-light);
+        transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+        bottom: 80px;
+        right: 60px;       
+    }
+}

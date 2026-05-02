@@ -3,13 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jordan PRO | מתחם כושר</title>
+    
+    <!--  Title -->
+    <title>JordanPRO | מתחם כושר </title>
+
+    <!--  Favicon -->
+    <link rel="icon" href="assets/imegs/page-logo.png" type="image/jpeg" />
+    <!-- <link rel="icon" href="assets/imegs/page-logo2.png" type="image/jpeg" /> -->
+
+    <!--  Meta Tags SEO -->
+    <meta name="description" content="מתחם אימוני כושר Jordan PRO במעלה אדומים — אימונים אישיים, קבוצתיים, תוכניות תזונה וליווי מקצועי עד להשגת כל המטרות." />
+    <meta name="keywords" content="כושר, אימונים, מעלה אדומים, Jordan PRO, מאמן אישי, תזונה, אימונים קבוצתיים" />
+    <meta name="author" content="Jordan PRO" />
+
+    <!--  Open Graph — לשיתוף בוואטסאפ ופייסבוק -->
+    <meta property="og:title" content="Jordan PRO | מתחם כושר  " />
+    <meta property="og:description" content="אימונים אישיים, קבוצתיים ותוכניות תזונה. התחל/י את המסע שלך היום!" />
+    <meta property="og:image" content="assets\imegs\logo.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="he_IL" />
+
     <link rel="stylesheet" href="main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;800;900&family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet" />
+</head>
   <body>
     <!-- 1. HERO -->
     <section class="hero fade-in">
@@ -28,7 +44,7 @@
         <a href="#contact1" class="btn-primary">התחל/י את המסע שלך</a>
       </div>
     </section>
-
+    
     <!-- 2. ABOUT -->
     <section class="about fade-in">
       <h2>קצת עלינו | Jordan <span>Pro</span></h2>
@@ -44,10 +60,17 @@
         לשירות, מקצועיות ויחס אישי, כדי שכל אחד ואחת יוכלו לקבל את הפתרון המדויק
         עבורם, בדרך המתאימה ביותר בשבילם .
       </p>
+      <div class="nev-btn" >
+        <a href="#services" class="btn-primary">שירותי המתחם</a>
+        <a href="#reviews" class="btn-primary">לקוחות מספרים</a>
+        <a href="#results" class="btn-primary">תוצאות מהשטח</a>
+        <a href="#trainers" class="btn-primary">המאמנים שלנו</a>
+        <a href="#more-info" class="btn-primary">אולי יעניין אותך</a>
+      </div>
     </section>
 
     <!-- 3. SERVICES -->
-    <section class="services fade-in">
+    <section class="services fade-in" id="services">
       <h2 class="section-title">שירותי המתחם</h2>
       <div class="service-grid">
         <!-- אימוניים קבוצתיים -->
@@ -192,7 +215,7 @@
     </section>
 
     <!-- 5. REVIEWS -->
-    <section class="reviews fade-in">
+    <section class="reviews fade-in" id="reviews">
       <h2 class="section-title">לקוחות מספרים</h2>
       <div class="reviews-grid">
         <!-- שיחה 1 -->
@@ -389,7 +412,7 @@
     </section>
 
     <!-- 6. RESULTS - BEFORE / AFTER  -->
-    <section class="results fade-in">
+    <section class="results fade-in" id="results">
       <h2 class="section-title">תוצאות מהשטח</h2>
       <div class="results-carousel-wrapper">
         <button class="results-btn prev" onclick="scrollTrainers(-1)">
@@ -492,7 +515,7 @@
     </section>
 
     <!-- 7. TRAINERS -->
-    <section class="trainers fade-in">
+    <section class="trainers fade-in" id="trainers">
       <h2 class="section-title">הכירו את המאמנים שלנו</h2>
       <div class="trainers-wrapper">
         <button class="trainers-btn prev" onclick="scrollTrainers(-1)">
@@ -518,12 +541,13 @@
             <div class="trainer-info">
               <div class="trainer-name">אופיר שבני</div>
               <div class="trainer-role">
-                מנכ"ל ובעלים , מאמן כושר אישי
+                מנכ"ל ובעלים , מאמן כושר 
                 <br />
               </div>
               <p class="trainer-bio">
-                מתמחה באימוני כוח ואירובי, מאמין בהתמדה, מקצועיות ויחס אישי לכל
-                מתאמן. מוביל את המתחם והצוות המקצועי.
+                מתמחה באימוני כוח ואירובי, מאמין בהתמדה, מקצועיות ויחס אישי לכל מתאמן. 
+                <br>
+                מוביל את המתחם והצוות המקצועי,מתמחה בתזונה ספורט וקואוצ'ינג.
               </p>
             </div>
           </div>
@@ -537,10 +561,9 @@
             />
             <div class="trainer-info">
               <div class="trainer-name">עידן שבני</div>
-              <div class="trainer-role">בעלים ומאמן כושר אישי וקבוצות</div>
+              <div class="trainer-role">סמנכ"ל ובעלים, מאמן כושר</div>
               <p class="trainer-bio">
-                מאמן גברים ונשים באימוני כוח ואירובי, מתמקד בשיפור כושר, חיזוק
-                הגוף ובניית תוכניות אימון מותאמות אישית.
+              מאמן גברים ונשים באימוני כוח ואירובי, מתמקד בשיפור כושר, חיזוק הגוף ובניית תוכניות אימון מותאמות אישית.
               </p>
             </div>
           </div>
@@ -554,10 +577,9 @@
             />
             <div class="trainer-info">
               <div class="trainer-name">אילנית לושי</div>
-              <div class="trainer-role">מאמנת פילאטיס וכוח לקבוצות</div>
+              <div class="trainer-role">מאמנת כושר ומדריכת פילאטיס</div>
               <p class="trainer-bio">
-                מתמחה בפילאטיס, חיזוק שרירי ליבה ושיפור יציבה. מעבירה אימונים
-                קבוצתיים באווירה מקצועית ונעימה.
+              מתמחה באימון לנשים בהריון ואחרי לידה, הנותנים דגש על חיזוק שרירי ליבה ושיפור יציבה. מעבירה אימונים קבוצתיים באווירה מקצועית ונעימה.
               </p>
             </div>
           </div>
@@ -571,10 +593,9 @@
             />
             <div class="trainer-info">
               <div class="trainer-name">שובל כהן</div>
-              <div class="trainer-role">מאמנת כוח ואירובי לקבוצות</div>
+              <div class="trainer-role">מאמנת כושר</div>
               <p class="trainer-bio">
-                מאמנת עם 7 שנות ניסיון, מתמחה באימוני כוח ואירובי. דוגלת באימון
-                מהנה, אנרגטי ומאתגר.
+              מתמחה באימוני אירובי דאנס, המשלבים תנועות מעולם הריקוד ודוגלת באימון מהנה, אנרגטי ומאתגר.
               </p>
             </div>
           </div>
@@ -619,7 +640,7 @@
     </section>
 
     <!-- 9. MORE INFORMATION -->
-    <section class="more-info fade-in">
+    <section class="more-info fade-in" id="more-info">
       <h2 class="section-title">אולי יעניין אותך...</h2>
       <div class="more-info-wrapper">
         <button class="more-btn prev" onclick="scrollMore(-1)">‹</button>
@@ -766,6 +787,25 @@
         </div>
       </div>
     </footer>
+
+    <!-- Back To Top Page -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="חזרה למעלה">
+      ⬆
+    </button>
+    
+    <!-- כפתור נגישות -->
+    <div class="accessibility-widget">
+      <button class="accessibility-btn" onclick="toggleAccessibility()" aria-label="תפריט נגישות">
+        ♿
+      </button>
+      <div class="accessibility-menu" id="accessMenu">
+        <button onclick="changeFontSize(1)">הגדל טקסט A+</button>
+        <button onclick="changeFontSize(-1)">הקטן טקסט A-</button>
+        <button onclick="toggleContrast()">ניגודיות גבוהה</button>
+        <button onclick="toggleGrayscale()">גווני אפור</button>
+        <button onclick="resetAll()">איפוס</button>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

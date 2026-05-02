@@ -8,6 +8,7 @@
 @import "/assets/style/mq.css";
 
 /* cmps */
+@import "./assets/style/cmps/accessibility.css";
 @import "./assets/style/cmps/hero.css";
 @import "./assets/style/cmps/about.css";
 @import "./assets/style/cmps/services.css";
@@ -17,3 +18,4 @@
 @import "./assets/style/cmps/results.css";
 @import "./assets/style/cmps/more-info.css";
 @import "./assets/style/cmps/footer.css";
+@import "./assets/style/cmps/back-to-top.css";

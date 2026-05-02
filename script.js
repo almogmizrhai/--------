@@ -148,3 +148,51 @@ async function submitForm(formId, successId) {
     form.querySelectorAll('input').forEach(i => i.value = '')
     form.querySelector('select').selectedIndex = 0
 }
+
+// back-to-top
+window.addEventListener('scroll', () => {
+    const btn = document.getElementById('backToTop')
+    if (window.scrollY > 500) {
+        btn.style.display = 'flex'
+    } else {
+        btn.style.display = 'none'
+    }
+})
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+// accessibility
+let fontSize = 100
+let isContrast = false
+let isGrayscale = false
+
+function toggleAccessibility() {
+    document.getElementById('accessMenu').classList.toggle('open')
+}
+
+function changeFontSize(dir) {
+    fontSize += dir * 10
+    fontSize = Math.min(Math.max(fontSize, 80), 140)
+    document.body.style.fontSize = fontSize + '%'
+}
+
+function toggleContrast() {
+    isContrast = !isContrast
+    document.body.classList.toggle('high-contrast', isContrast)
+}
+
+function toggleGrayscale() {
+    isGrayscale = !isGrayscale
+    document.documentElement.style.filter = isGrayscale ? 'grayscale(100%)' : ''
+}
+
+function resetAll() {
+    fontSize = 100
+    isContrast = false
+    isGrayscale = false
+    document.body.style.fontSize = ''
+    document.documentElement.style.filter = ''
+    document.body.classList.remove('high-contrast')
+}

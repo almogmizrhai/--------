@@ -8,7 +8,8 @@
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
         "title title"
-        "img text";
+        "img text"
+        "nev-btn nev-btn";
     align-items: center;
     justify-items: center;
 
@@ -32,6 +33,32 @@
         grid-area: text;
         padding: 10px; 
     }
+
+    .nev-btn{
+        grid-area: nev-btn;
+        width: 100%;
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 16px 0 0;
+        border-top: 1px solid var(--gold);
+
+        .btn-primary{
+            flex: 1;
+            min-width: 120px;
+            max-width: 200px;
+            text-align: center;
+            padding: 12px 8px;
+            border: 1px solid var(--white);
+            border-radius: 15px;
+            
+            &:hover{
+                border: 1px solid var(--gold);
+                color: var(--gold);
+            }
+        }
+    }
     
     /* טלפון */
     @media (max-width: 768px) {
@@ -39,12 +66,22 @@
         grid-template-areas:
         "title"
         "img"
-        "text";
+        "text"
+        "nev-btn";
         
         p{
             border-right:none;
             border-top: 2px solid var(--gold);
             padding: 10px;    
-        }   
+        }
+        
+        .nev-btn{
+            gap: 8px;
+
+            .btn-primary{
+                flex: 1 1 40%;
+                max-width: none;
+            }
+        }
     }
 }
